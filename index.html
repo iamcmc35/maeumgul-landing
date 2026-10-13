@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="김해 삼계동 마음글독서논술 - 독서, 문해력, 글쓰기, 교과학습 상담" />
+  <title>마음글독서논술 | 김해 삼계동 독서·문해력·논술</title>
+  <style>
+    :root {
+      --bg: #fbfaf7;
+      --card: #ffffff;
+      --text: #243028;
+      --muted: #647067;
+      --accent: #416b50;
+      --line: #e6e9e3;
+      --soft: #edf3ee;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Noto Sans KR", Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.65;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1080px, calc(100% - 40px)); margin: 0 auto; }
+    header {
+      position: sticky; top: 0; z-index: 20;
+      background: rgba(251,250,247,.94);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(10px);
+    }
+    nav { display: flex; align-items: center; justify-content: space-between; min-height: 66px; gap: 20px; }
+    .brand { font-weight: 800; letter-spacing: -0.03em; }
+    .navlinks { display: flex; gap: 18px; font-size: 14px; color: var(--muted); }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 14px 20px; border-radius: 10px; font-weight: 700;
+      background: var(--accent); color: white; border: 1px solid var(--accent);
+    }
+    .btn.secondary { background: transparent; color: var(--accent); }
+    .hero { padding: 90px 0 70px; }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 40px; align-items: center; }
+    .eyebrow { color: var(--accent); font-weight: 800; font-size: 14px; letter-spacing: .04em; }
+    h1 { font-size: clamp(38px, 6vw, 64px); line-height: 1.14; margin: 14px 0 22px; letter-spacing: -0.05em; }
+    h2 { font-size: clamp(28px, 4vw, 40px); line-height: 1.25; margin: 0 0 14px; letter-spacing: -0.04em; }
+    h3 { margin: 0 0 8px; font-size: 20px; }
+    .lead { font-size: 19px; color: var(--muted); max-width: 720px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+    .hero-card { background: var(--card); border: 1px solid var(--line); border-radius: 24px; padding: 28px; box-shadow: 0 16px 50px rgba(36,48,40,.07); }
+    .hero-card ul { margin: 12px 0 0; padding-left: 20px; }
+    section { padding: 72px 0; }
+    .section-head { max-width: 760px; margin-bottom: 30px; }
+    .muted { color: var(--muted); }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 24px; }
+    .step { background: var(--soft); border-radius: 18px; padding: 24px; }
+    .step b { display: inline-block; color: var(--accent); margin-bottom: 6px; }
+    .program { min-height: 150px; }
+    .cta { background: #243028; color: white; border-radius: 26px; padding: 42px; }
+    .cta .muted { color: #cfd8d1; }
+    .notice { margin-top: 16px; padding: 14px 16px; border-radius: 12px; background: #fff6d9; color: #5b4a16; font-size: 14px; }
+    footer { padding: 36px 0 56px; color: var(--muted); font-size: 14px; }
+    @media (max-width: 760px) {
+      .hero-grid, .grid-3, .grid-2 { grid-template-columns: 1fr; }
+      .navlinks { display: none; }
+      .hero { padding-top: 64px; }
+      section { padding: 54px 0; }
+      .cta { padding: 30px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="brand">마음글독서논술</div>
+        <div class="navlinks">
+          <a href="#concern">이런 아이에게</a>
+          <a href="#method">수업방식</a>
+          <a href="#program">프로그램</a>
+          <a href="#consult">상담</a>
+        </div>
+        <a class="btn" href="#consult">상담 안내</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">김해 삼계동 · 독서 · 문해력 · 논술</div>
+          <h1>읽는 힘에서<br>생각하고 표현하는 힘까지</h1>
+          <p class="lead">마음글독서논술은 아이가 책을 읽고 이해하며, 자신의 생각을 말과 글로 표현하는 과정을 차근차근 돕는 공부방입니다.</p>
+          <div class="actions">
+            <a class="btn" href="#consult">상담 연결하기</a>
+            <a class="btn secondary" href="#program">프로그램 보기</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>처음 방문하셨나요?</h3>
+          <p class="muted">학년과 현재 학습 고민을 확인한 뒤, 수업 방식과 프로그램을 안내합니다.</p>
+          <ul>
+            <li>독서 습관과 문해력</li>
+            <li>글쓰기와 자기표현</li>
+            <li>교과 내용을 읽고 이해하는 힘</li>
+            <li>아이에게 맞는 학습 방법</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="concern">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">PARENTS' CONCERNS</div>
+          <h2>이런 고민이 있다면 상담해 보세요</h2>
+          <p class="muted">학부모가 실제로 느끼는 문제를 중심으로 상담을 시작합니다.</p>
+        </div>
+        <div class="grid-2">
+          <div class="card"><h3>책을 읽어도 내용을 설명하기 어려워해요</h3><p class="muted">읽은 내용을 이해하고 자신의 말로 정리하는 힘을 함께 봅니다.</p></div>
+          <div class="card"><h3>글쓰기를 시작하는 것부터 부담스러워해요</h3><p class="muted">생각을 말로 풀고, 짧은 문장에서 글로 확장하는 과정을 돕습니다.</p></div>
+          <div class="card"><h3>문제를 읽고도 무엇을 묻는지 잘 몰라요</h3><p class="muted">교과학습의 바탕이 되는 문해력과 질문 이해 능력을 점검합니다.</p></div>
+          <div class="card"><h3>자기 생각과 감정을 표현하는 것이 서툴러요</h3><p class="muted">독서와 대화를 바탕으로 생각과 표현을 자연스럽게 연결합니다.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="method">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">LEARNING METHOD</div>
+          <h2>읽고, 생각하고, 말하고, 씁니다</h2>
+          <p class="muted">정답을 바로 알려주기보다 아이가 스스로 이해하고 표현하는 과정을 중요하게 봅니다.</p>
+        </div>
+        <div class="grid-3">
+          <div class="step"><b>STEP 1</b><h3>읽기</h3><p>책과 교과 내용을 정확하게 읽고 핵심을 파악합니다.</p></div>
+          <div class="step"><b>STEP 2</b><h3>생각·대화</h3><p>질문과 대화를 통해 자신의 생각을 정리합니다.</p></div>
+          <div class="step"><b>STEP 3</b><h3>표현</h3><p>말과 글로 표현하고 피드백을 통해 다듬습니다.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="program">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">PROGRAM</div>
+          <h2>아이의 단계에 맞춰 함께 봅니다</h2>
+          <p class="muted">아래 내용은 MVP 예시입니다. 실제 운영 프로그램명과 대상 학년에 맞춰 2회차에서 수정하면 됩니다.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card program"><h3>한글·기초문해</h3><p class="muted">예비초·저학년을 중심으로 읽기와 표현의 기초를 다집니다.</p></div>
+          <div class="card program"><h3>독서·논술</h3><p class="muted">독서 후 질문, 대화, 글쓰기를 연결해 사고력과 표현력을 키웁니다.</p></div>
+          <div class="card program"><h3>교과문해력</h3><p class="muted">문제와 지문을 읽고 이해하는 힘을 교과학습과 연결합니다.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap grid-2">
+        <div class="card">
+          <div class="eyebrow">WHY MAEUMGUL</div>
+          <h2>수업보다 먼저 아이를 봅니다</h2>
+          <p class="muted">마음글독서논술은 독서와 문해력뿐 아니라 아이가 어떤 방식으로 생각하고 표현하는지 살피는 것을 중요하게 생각합니다.</p>
+        </div>
+        <div class="card">
+          <div class="eyebrow">NEXT STEP</div>
+          <h2>현재 고민부터 편하게 이야기해 주세요</h2>
+          <p class="muted">상담에서는 학생의 학년, 현재 학습상황, 독서·글쓰기 고민을 확인하고 적합한 수업 방향을 안내합니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="consult">
+      <div class="wrap">
+        <div class="cta">
+          <div class="eyebrow" style="color:#b9d2c0">CONSULTATION</div>
+          <h2>마음글독서논술 상담 안내</h2>
+          <p class="muted">네이버 스마트플레이스 상담예약 또는 대표 연락처로 연결할 수 있습니다.</p>
+          <div class="actions">
+            <a class="btn" href="NAVER_BOOKING_URL" target="_blank" rel="noopener">네이버 상담예약</a>
+            <a class="btn secondary" style="border-color:#dce8df;color:white" href="tel:PHONE_NUMBER">전화 문의</a>
+          </div>
+          <div class="notice">
+            <strong>배포 전 수정:</strong> <code>NAVER_BOOKING_URL</code>에는 실제 네이버 예약 주소를, <code>PHONE_NUMBER</code>에는 상담 전화번호를 입력하세요.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <strong>마음글독서논술</strong><br>
+      김해 삼계동 · 독서 · 문해력 · 논술<br>
+      <span>※ 본 페이지는 컨설팅 실습용 MVP입니다. 실제 사업자 정보·주소·프로그램·수강료·개인정보 처리 내용은 운영 전 최종 확인이 필요합니다.</span>
+    </div>
+  </footer>
+</body>
+</html>
