@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>마음글독서논술 | 김해 삼계동 독서·논술 교실</title>
+<meta name="description" content="김해 삼계동 독서·논술 교실. 책을 읽고, 생각을 말하고, 자기 문장으로 씁니다. 상담 신청을 받습니다." />
+<meta name="theme-color" content="#12201C" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="마음글독서논술 | 김해 삼계동 독서·논술 교실" />
+<meta property="og:description" content="책을 읽고, 생각을 말하고, 자기 문장으로 씁니다. 상담 신청을 받습니다." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2312201C'/%3E%3Cpath d='M8 9h7a3 3 0 0 1 3 3v11a2.6 2.6 0 0 0-2.6-2.6H8z' fill='%23F1D45F'/%3E%3Cpath d='M24 9h-7a3 3 0 0 0-3 3v11a2.6 2.6 0 0 1 2.6-2.6H24z' fill='%23F4F5F1'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@600;700;900&display=swap" rel="stylesheet" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"EducationalOrganization",
+  "name":"마음글독서논술",
+  "description":"김해 삼계동 독서·논술 교실",
+  "address":{ "@type":"PostalAddress","addressRegion":"경상남도","addressLocality":"김해시","streetAddress":"삼계동 (상세주소 입력 필요)","addressCountry":"KR" },
+  "areaServed":"김해시 삼계동"
+}
+</script>
+<style>
+/* =========================================================
+   마음글독서논술 — 랜딩페이지 (단일 파일, 외부 라이브러리 없음)
+   디자인: 「채점의 순간」
+   ▸ 형광펜 노랑(--mark)은 서명 요소 한 곳에만 씁니다.
+   ▸ 주황 점선 = 배포 전 원장님이 채워야 하는 자리 표시입니다.
+   ========================================================= */
+:root{
+  --paper:#F4F5F1; --paper-lift:#FBFBF9;
+  --night:#12201C; --night-2:#1B2C26;
+  --ink:#16211D; --ink-2:#3B4A44; --muted:#6F7C76;
+  --rule:#DBDDD5; --rule-soft:#E8E9E2;
+  --teal:#1F5A50; --teal-dk:#16423A;
+  --mark:#F1D45F; --mark-soft:#FBEFB8;
+  --alarm:#A8461F;
+  --wrap:1120px; --measure:36em;
+}
+*{ box-sizing:border-box }
+html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; scroll-padding-top:130px }
+@media (prefers-reduced-motion:reduce){ html{ scroll-behavior:auto } }
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
+  font-size:16.5px; line-height:1.85; font-weight:400;
+  word-break:keep-all; overflow-wrap:break-word; -webkit-font-smoothing:antialiased;
+}
+img{ max-width:100%; display:block }
+a{ color:inherit }
+.wrap{ max-width:var(--wrap); margin:0 auto; padding:0 24px }
+@media (max-width:520px){ .wrap{ padding:0 18px } }
+.skip{ position:absolute; left:-9999px; top:0; z-index:300; background:var(--night); color:#fff; padding:12px 18px; text-decoration:none }
+.skip:focus{ left:8px; top:8px; position:fixed }
+:focus-visible{ outline:3px solid var(--teal); outline-offset:2px; border-radius:2px }
+.sr{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap }
+h1,h2,h3,h4{ font-family:'Noto Serif KR',serif; margin:0; letter-spacing:-.015em; font-weight:700 }
+h1{ font-size:clamp(30px,5.4vw,52px); line-height:1.28; font-weight:900 }
+h2{ font-size:clamp(23px,3.2vw,32px); line-height:1.38 }
+h3{ font-size:18.5px; line-height:1.5 }
+p{ margin:0 0 1.05em }
+.lead{ font-size:17.5px; color:var(--ink-2) }
+.eyebrow{ font-size:12.5px; font-weight:700; letter-spacing:.2em; color:var(--teal); margin:0 0 14px }
+.on-night .eyebrow{ color:var(--mark) }
+.sec-label{ display:flex; align-items:center; gap:10px; font-size:12px; font-weight:700; letter-spacing:.18em; color:var(--teal); margin:0 0 16px }
+.sec-label::after{ content:""; flex:1; height:1px; background:var(--rule) }
+.u{ background-image:linear-gradient(transparent 64%, var(--mark-soft) 64%); background-repeat:no-repeat; font-weight:500 }
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:9px;
+  padding:15px 25px; border-radius:3px; border:1px solid transparent;
+  font-size:15.5px; font-weight:700; text-decoration:none; cursor:pointer; line-height:1.25;
+  transition:background .18s,color .18s,border-color .18s,transform .18s;
+}
+.btn--solid{ background:var(--teal); color:#fff }
+.btn--solid:hover{ background:var(--teal-dk) }
+.btn--ghost{ border-color:var(--rule); background:transparent; color:var(--ink) }
+.btn--ghost:hover{ border-color:var(--ink); background:#fff }
+.on-night .btn--solid{ background:var(--mark); color:var(--night) }
+.on-night .btn--solid:hover{ background:#fff }
+.on-night .btn--ghost{ border-color:rgba(244,245,241,.34); color:#E7EAE6 }
+.on-night .btn--ghost:hover{ border-color:#fff; background:rgba(255,255,255,.08) }
+.btn:active{ transform:translateY(1px) }
+.btn--block{ display:flex; width:100% }
+.ph{ display:inline-block; font-size:.86em; font-weight:700; color:var(--alarm); background:#FBEDE6; border:1px dashed #E0B49B; border-radius:2px; padding:1px 7px; white-space:nowrap }
+.todo-block{ border:1px dashed #D9B49C; background:#FCF5F0; border-radius:3px; padding:14px 16px; color:#8A5236; font-size:14.5px; line-height:1.75 }
+.todo-block .t{ display:block; font-size:11.5px; font-weight:700; letter-spacing:.14em; color:var(--alarm); margin-bottom:5px }
+.todo-block p:last-child{ margin-bottom:0 }
+.topbar{ position:sticky; top:0; z-index:100; background:rgba(244,245,241,.94); backdrop-filter:blur(10px); border-bottom:1px solid var(--rule) }
+.topbar__in{ max-width:var(--wrap); margin:0 auto; padding:12px 24px; display:flex; align-items:center; gap:20px }
+.brand{ display:flex; align-items:center; gap:11px; text-decoration:none; flex-shrink:0 }
+.brand__mark{ width:30px; height:30px; flex:none }
+.brand__name{ font-family:'Noto Serif KR',serif; font-weight:900; font-size:18px; line-height:1.3 }
+.brand__sub{ display:block; font-size:11px; font-weight:500; color:var(--muted); letter-spacing:.08em; line-height:1.4 }
+.topbar__nav{ display:flex; gap:22px; margin-left:auto; font-size:14.5px; font-weight:500 }
+.topbar__nav a{ text-decoration:none; color:var(--ink-2); padding:4px 0; border-bottom:2px solid transparent }
+.topbar__nav a:hover{ color:var(--ink); border-bottom-color:var(--mark) }
+.topbar__cta{ font-size:14px; font-weight:700; text-decoration:none; color:#fff; background:var(--teal); padding:10px 17px; border-radius:3px; flex-shrink:0 }
+.topbar__cta:hover{ background:var(--teal-dk) }
+@media (max-width:900px){ .topbar__nav{ display:none } .topbar__cta{ margin-left:auto } }
+.indexbar{ position:sticky; top:55px; z-index:90; background:var(--paper); border-bottom:1px solid var(--rule) }
+.indexbar__in{ max-width:var(--wrap); margin:0 auto; padding:0 24px; display:flex; gap:2px; overflow-x:auto; scrollbar-width:none }
+.indexbar__in::-webkit-scrollbar{ display:none }
+.indexbar a{ display:block; padding:12px 13px 11px; font-size:13.5px; font-weight:500; text-decoration:none; color:var(--muted); white-space:nowrap; border-top:2px solid transparent }
+.indexbar a:hover{ color:var(--ink) }
+.indexbar a[aria-current="true"]{ color:var(--ink); font-weight:700; border-top-color:var(--teal) }
+.hero{ background:var(--night); color:#EDEFEB; padding:clamp(44px,6.6vw,82px) 0 clamp(48px,6.6vw,76px) }
+.hero__grid{ display:grid; grid-template-columns:1.06fr .94fr; gap:clamp(30px,5vw,64px); align-items:center }
+@media (max-width:940px){ .hero__grid{ grid-template-columns:1fr; gap:42px } }
+.hero h1{ color:#fff }
+.hero h1 .u{ background-image:linear-gradient(transparent 63%, rgba(241,212,95,.42) 63%) }
+.hero__sub{ font-size:17px; color:#B9C4BE; margin:22px 0 0; max-width:30em }
+.hero__cta{ display:flex; flex-wrap:wrap; gap:11px; margin:30px 0 0 }
+.hero__trust{ display:flex; flex-wrap:wrap; gap:8px 20px; margin:28px 0 0; padding:20px 0 0; border-top:1px solid rgba(255,255,255,.13); font-size:13.5px; color:#9FAEA7; list-style:none }
+.hero__trust li{ display:flex; align-items:center; gap:7px }
+.hero__trust li::before{ content:""; width:5px; height:5px; background:var(--mark); border-radius:50%; flex:none }
+.markcard__paper{ background:#FFFDF6; border-radius:2px; padding:26px 24px 24px; box-shadow:0 24px 50px -22px rgba(0,0,0,.6); background-image:repeating-linear-gradient(to bottom,transparent 0 37px,#E9E6DA 37px 38px); background-position:0 26px }
+.markcard__tag{ display:inline-block; font-size:11px; font-weight:700; letter-spacing:.14em; color:#8A7A3E; background:var(--mark-soft); padding:3px 9px; border-radius:2px; margin-bottom:16px }
+.markcard__sentence{ font-family:'Noto Serif KR',serif; font-weight:600; font-size:18.5px; line-height:2.05; color:#2A3630; margin:0 }
+.markcard__sentence .hl{ background-image:linear-gradient(transparent 58%,var(--mark) 58%); background-size:0% 100%; background-repeat:no-repeat; transition:background-size 1.05s cubic-bezier(.5,0,.2,1) .25s }
+.markcard.is-in .markcard__sentence .hl{ background-size:100% 100% }
+.markcard__note{ margin:18px 0 0; padding:13px 0 0 15px; border-left:2px solid var(--mark); font-size:14px; color:#5C6A63; line-height:1.7; opacity:0; transform:translateY(6px); transition:opacity .6s ease 1.05s,transform .6s ease 1.05s }
+.markcard.is-in .markcard__note{ opacity:1; transform:none }
+.markcard__cap{ font-size:12.5px; color:#8B9A93; margin:16px 0 0 }
+@media (prefers-reduced-motion:reduce){ .markcard__sentence .hl{ background-size:100% 100%; transition:none } .markcard__note{ opacity:1; transform:none; transition:none } }
+.sec{ padding:clamp(54px,7.6vw,92px) 0 }
+.sec--tight{ padding:clamp(42px,5.6vw,68px) 0 }
+.sec--lift{ background:var(--paper-lift); border-top:1px solid var(--rule-soft); border-bottom:1px solid var(--rule-soft) }
+.sec--night{ background:var(--night-2); color:#E6EAE6 }
+.sec--night .sec-label{ color:var(--mark) }
+.sec--night .sec-label::after{ background:rgba(255,255,255,.16) }
+.sec-head{ max-width:var(--measure); margin-bottom:clamp(26px,3.6vw,40px) }
+.sec-head p{ color:var(--ink-2); margin:14px 0 0 }
+.sec--night .sec-head p{ color:#AEBAB3 }
+.intro{ display:grid; grid-template-columns:1.15fr .85fr; gap:clamp(28px,4.6vw,56px); align-items:start }
+@media (max-width:860px){ .intro{ grid-template-columns:1fr; gap:32px } }
+.intro__body p{ color:var(--ink-2) }
+.intro__sign{ font-family:'Noto Serif KR',serif; font-weight:700; font-size:16px; margin:26px 0 0 }
+.intro__sign span{ display:block; font-family:'Noto Sans KR',sans-serif; font-size:13px; font-weight:400; color:var(--muted); margin-top:5px }
+.slot{ border:1px dashed #C9B79A; background:linear-gradient(135deg,rgba(217,180,156,.10) 25%,transparent 25%) 0 0/18px 18px,#FCF8F3; border-radius:3px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:7px; padding:20px; text-align:center; color:#96603E }
+.slot__ic{ width:26px; height:26px; opacity:.7 }
+.slot__t{ font-size:13.5px; font-weight:700 }
+.slot__d{ font-size:12px; color:#A87A5C; line-height:1.6 }
+.intro__photo{ aspect-ratio:4/5 }
+@media (max-width:860px){ .intro__photo{ aspect-ratio:16/10 } }
+.steps{ list-style:none; margin:0; padding:0; counter-reset:s; max-width:44em }
+.steps li{ counter-increment:s; position:relative; padding:0 0 30px 64px; border-left:1px solid var(--rule); margin-left:15px }
+.steps li:last-child{ border-left-color:transparent; padding-bottom:0 }
+.steps li::before{ content:counter(s); position:absolute; left:-15px; top:-3px; width:30px; height:30px; border-radius:50%; background:var(--paper); border:1px solid var(--teal); color:var(--teal); font-size:13.5px; font-weight:700; display:flex; align-items:center; justify-content:center }
+.steps h3{ margin-bottom:6px }
+.steps p{ margin:0; color:var(--ink-2); font-size:15.5px }
+.grid3{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px }
+.grid2{ display:grid; grid-template-columns:repeat(2,1fr); gap:18px }
+@media (max-width:880px){ .grid3{ grid-template-columns:1fr } }
+@media (max-width:720px){ .grid2{ grid-template-columns:1fr } }
+.card{ background:#fff; border:1px solid var(--rule); border-radius:3px; padding:24px 22px; display:flex; flex-direction:column }
+.card--tag{ border-top:3px solid var(--teal) }
+.card__kicker{ font-size:12px; font-weight:700; letter-spacing:.16em; color:var(--teal); margin:0 0 8px }
+.card h3{ margin:0 0 10px }
+.card p{ color:var(--ink-2); font-size:15px; margin:0 0 14px }
+.card dl{ margin:auto 0 0; font-size:14px; border-top:1px solid var(--rule-soft); padding-top:13px }
+.card dt{ color:var(--muted); font-size:12.5px; font-weight:500; margin:0 }
+.card dd{ margin:2px 0 10px; font-weight:700 }
+.card dd:last-child{ margin-bottom:0 }
+.review{ background:#fff; border:1px solid var(--rule); border-left:3px solid var(--mark); border-radius:3px; padding:22px 20px }
+.review__q{ font-family:'Noto Serif KR',serif; font-size:16px; line-height:1.85; color:var(--ink); margin:0 0 14px }
+.review__who{ font-size:13px; color:var(--muted); margin:0 }
+.review__who b{ color:var(--ink-2); font-weight:700 }
+.spacegrid{ display:grid; grid-template-columns:repeat(4,1fr); gap:14px }
+.spacegrid > *{ aspect-ratio:1/1 }
+.spacegrid .slot--wide{ grid-column:span 2; aspect-ratio:2/1 }
+@media (max-width:880px){ .spacegrid{ grid-template-columns:repeat(2,1fr) } .spacegrid .slot--wide{ grid-column:span 2 } }
+.faq{ border-top:1px solid var(--rule); max-width:52em }
+.faq details{ border-bottom:1px solid var(--rule) }
+.faq summary{ cursor:pointer; padding:20px 42px 20px 0; font-family:'Noto Serif KR',serif; font-size:17px; font-weight:700; position:relative; list-style:none }
+.faq summary::-webkit-details-marker{ display:none }
+.faq summary::after{ content:"+"; position:absolute; right:6px; top:16px; font-size:22px; font-weight:400; color:var(--teal) }
+.faq details[open] summary::after{ content:"–" }
+.faq .faq__a{ padding:0 0 22px; color:var(--ink-2); font-size:15.5px; max-width:44em }
+.faq .faq__a p:last-child{ margin-bottom:0 }
+.loc{ display:grid; grid-template-columns:1.1fr .9fr; gap:clamp(24px,4vw,48px); align-items:start }
+@media (max-width:860px){ .loc{ grid-template-columns:1fr } }
+.loc__map{ aspect-ratio:4/3; min-height:280px }
+.loc__list{ list-style:none; margin:0; padding:0; font-size:15.5px }
+.loc__list li{ display:grid; grid-template-columns:84px 1fr; gap:14px; padding:13px 0; border-bottom:1px solid var(--rule-soft) }
+.loc__list b{ font-weight:700; color:var(--muted); font-size:13.5px; padding-top:2px }
+.form{ background:#fff; border:1px solid var(--rule); border-radius:3px; padding:clamp(22px,3.4vw,34px) }
+.form__row{ display:grid; grid-template-columns:1fr 1fr; gap:16px }
+@media (max-width:640px){ .form__row{ grid-template-columns:1fr } }
+.field{ margin-bottom:17px }
+.field label{ display:block; font-size:13.5px; font-weight:700; margin-bottom:6px }
+.field label .req{ color:var(--alarm); margin-left:3px }
+.field input,.field select,.field textarea{ width:100%; padding:12px 13px; border:1px solid var(--rule); border-radius:2px; background:#FDFDFC; font-family:inherit; font-size:15.5px; color:var(--ink) }
+.field input:focus,.field select:focus,.field textarea:focus{ border-color:var(--teal); background:#fff; outline:none }
+.field textarea{ min-height:104px; resize:vertical }
+.field .hint{ display:block; font-size:12.5px; color:var(--muted); margin-top:5px; font-weight:400 }
+.consent{ display:flex; gap:11px; align-items:flex-start; font-size:14px; color:var(--ink-2); margin:6px 0 20px }
+.consent input{ width:19px; height:19px; margin-top:3px; flex:none; accent-color:var(--teal) }
+.alert{ display:none; border-radius:3px; padding:15px 17px; font-size:14.5px; margin-bottom:18px; line-height:1.7 }
+.alert--ok{ background:#EDF4F0; border:1px solid #BFD8CD; color:#1F4A3E }
+.alert--warn{ background:#FDF3EC; border:1px dashed #D9B49C; color:#8A5236 }
+.alert--err{ background:#FCEFEA; border:1px solid #E7B9A6; color:#8E3D1C }
+.alert ul{ margin:8px 0 0; padding-left:20px }
+.foot{ background:var(--night); color:#9FAEA7; padding:clamp(44px,5.4vw,66px) 0 30px; font-size:14px }
+.foot__grid{ display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:32px }
+@media (max-width:820px){ .foot__grid{ grid-template-columns:1fr; gap:26px } }
+.foot h4{ font-family:'Noto Sans KR',sans-serif; font-size:12px; font-weight:700; letter-spacing:.16em; color:#7F8F88; margin:0 0 12px }
+.foot ul{ list-style:none; margin:0; padding:0 }
+.foot li{ margin-bottom:8px }
+.foot a{ color:#C8D1CC; text-decoration:none }
+.foot a:hover{ color:#fff; text-decoration:underline }
+.foot__brand{ font-family:'Noto Serif KR',serif; font-size:21px; font-weight:900; color:#fff; margin:0 0 10px }
+.foot__biz{ margin-top:34px; padding-top:20px; border-top:1px solid rgba(255,255,255,.13); font-size:12.5px; color:#7F8F88; line-height:1.85 }
+.mobilebar{ display:none; position:fixed; left:0; right:0; bottom:0; z-index:120; background:rgba(18,32,28,.97); backdrop-filter:blur(8px); border-top:1px solid rgba(255,255,255,.14); padding:10px 12px calc(10px + env(safe-area-inset-bottom)) }
+.mobilebar__in{ display:flex; gap:9px }
+@media (max-width:760px){ .mobilebar{ display:block } body{ padding-bottom:74px } }
+/* 스크롤 등장 효과는 쓰지 않습니다.
+   화면 밖 콘텐츠가 opacity:0으로 남아 보이지 않는 사고를 막기 위해,
+   움직임은 서명 요소(형광펜) 한 곳에만 둡니다. */
+.reveal{ opacity:1; transform:none }
+</style>
+</head>
+<body class="on-night-top">
+<a class="skip" href="#consult">상담 신청으로 바로 가기</a>
+
+<header class="topbar">
+  <div class="topbar__in">
+    <a class="brand" href="#top">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="6" fill="#12201C"/>
+        <path d="M8 9h7a3 3 0 0 1 3 3v11a2.6 2.6 0 0 0-2.6-2.6H8z" fill="#F1D45F"/>
+        <path d="M24 9h-7a3 3 0 0 0-3 3v11a2.6 2.6 0 0 1 2.6-2.6H24z" fill="#F4F5F1"/>
+      </svg>
+      <span>
+        <span class="brand__name">마음글독서논술</span>
+        <span class="brand__sub">김해 삼계동 · 독서·논술</span>
+      </span>
+    </a>
+    <nav class="topbar__nav" aria-label="주요 메뉴">
+      <a href="#about">학원 소개</a>
+      <a href="#method">수업 방식</a>
+      <a href="#program">프로그램</a>
+      <a href="#faq">자주 묻는 질문</a>
+      <a href="#location">오시는 길</a>
+    </nav>
+    <a class="topbar__cta" href="#consult">상담 신청</a>
+  </div>
+</header>
+
+<nav class="indexbar" aria-label="페이지 안에서 이동">
+  <div class="indexbar__in">
+    <a href="#about">소개</a>
+    <a href="#method">수업 방식</a>
+    <a href="#program">프로그램</a>
+    <a href="#reviews">아이의 변화</a>
+    <a href="#space">공간</a>
+    <a href="#faq">자주 묻는 질문</a>
+    <a href="#location">오시는 길</a>
+    <a href="#consult">상담 신청</a>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- ════════ 히어로 ════════ -->
+  <section class="hero on-night">
+    <div class="wrap">
+      <div class="hero__grid">
+        <div>
+          <p class="eyebrow">김해 삼계동 · 초등·중등 독서·논술</p>
+          <h1>읽은 것을 <span class="u">자기 문장</span>으로 쓸 줄 아는 아이</h1>
+          <p class="hero__sub">책을 많이 읽는 것과, 읽은 것을 설명할 수 있는 것은 다릅니다. 마음글독서논술은 한 권을 끝까지 읽고 말하고 쓰는 수업을 합니다. 정원이 작아서, 모든 아이의 글에 선생님이 직접 답을 씁니다.</p>
+          <div class="hero__cta">
+            <a class="btn btn--solid" href="#consult">상담 신청하기</a>
+            <!-- ▼ 배포 전: 아래 href를 실제 전화번호로 바꾸고 [전화번호] 자리를 채우세요 -->
+            <a class="btn btn--ghost" href="#consult">전화 상담 <span class="ph">[전화번호]</span></a>
+          </div>
+          <ul class="hero__trust">
+            <li>한 반 정원 6명 이내</li>
+            <li>매 수업 글쓰기 첨삭</li>
+            <li>학부모 상담 상시</li>
+          </ul>
+        </div>
+
+        <!-- 서명 요소: 아이의 글에 선생님이 답을 다는 순간 -->
+        <figure class="markcard reveal" id="markcard" style="margin:0">
+          <div class="markcard__paper">
+            <span class="markcard__tag">수업 예시</span>
+            <p class="markcard__sentence">어른들은 <span class="hl">나무가 자라는 소리를 듣지 못한다</span>고 생각하지만, 나는 아침마다 창가에서 그 소리를 들었다.</p>
+            <p class="markcard__note">이 문장에서 멈췄습니다. 어떤 소리였는지 한 문단 더 써 볼까요?</p>
+          </div>
+          <figcaption class="markcard__cap">선생님은 아이의 글에서 멈춘 자리에 표시를 남기고, 다음 수업에서 함께 다시 씁니다.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ 소개 ════════ -->
+  <section class="sec" id="about">
+    <div class="wrap">
+      <div class="intro">
+        <div class="intro__body reveal">
+          <p class="sec-label">학원 소개</p>
+          <h2>한 아이의 글을<br />끝까지 읽어 주는 교실</h2>
+          <p class="lead" style="margin-top:18px">삼계동에서 작은 독서·논술 교실을 하고 있습니다. 책을 읽고, 자기 생각을 말하고, 그것을 글로 남기는 일을 가르칩니다.</p>
+          <p>많은 아이들이 책은 읽지만 “무슨 내용이었어?”라는 질문 앞에서 멈춥니다. 저는 그 지점을 중요하게 봅니다. 읽은 내용을 자기 말로 꺼내고, 토론에서 다른 생각을 만나고, 그것을 자기 문장으로 다시 쓰는 과정을 매주 반복합니다.</p>
+          <p>정원을 작게 유지하는 이유는 하나입니다. 아이가 쓴 글을 끝까지 읽고, 어디에서 멈췄는지, 어떤 문장이 좋았는지 구체적으로 짚어 주려면 한 번에 볼 수 있는 글이 한정적이기 때문입니다.</p>
+          <p class="intro__sign">마음글독서논술 원장 <span class="ph">[원장 성명 입력]</span><span>초등·중등 독서·논술 지도</span></p>
+        </div>
+        <div class="intro__photo slot reveal">
+          <svg class="slot__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="M3.5 17l5-4.5 4 3.5 3-2.5 5 4"/></svg>
+          <span class="slot__t">원장님 사진 자리</span>
+          <span class="slot__d">권장 800×1000px (세로 4:5)<br />수업 중 자연스러운 모습 권장</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ 수업 방식 (실제 순서라 번호를 씁니다) ════════ -->
+  <section class="sec sec--lift" id="method">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="sec-label">수업 방식</p>
+        <h2>한 권을 네 단계로 소화합니다</h2>
+        <p>매주 같은 순서를 반복합니다. 아이는 순서에 익숙해지고, 익숙해진 만큼 생각할 시간을 더 갖습니다.</p>
+      </div>
+      <ol class="steps">
+        <li class="reveal">
+          <h3>읽기 — 밑줄을 그으며 한 권 읽기</h3>
+          <p>분량을 나눠 미리 읽어 옵니다. 모르는 낱말은 표시해 오고, 수업에서 함께 확인합니다.</p>
+        </li>
+        <li class="reveal">
+          <h3>발제문 — 질문에 답하며 생각 꺼내기</h3>
+          <p>선생님이 만든 두세 개의 질문에 자기 생각을 먼저 써 옵니다. 발표가 아니어서 부담이 적습니다.</p>
+        </li>
+        <li class="reveal">
+          <h3>토론 — 다른 생각과 부딪히기</h3>
+          <p>같은 책을 읽고도 결론이 다를 수 있다는 것을 경험합니다. 상대의 근거를 듣고 자기 주장을 고쳐 봅니다.</p>
+        </li>
+        <li class="reveal">
+          <h3>글쓰기 — 자기 문장으로 다시 쓰기</h3>
+          <p>토론에서 달라진 생각까지 담아 한 편의 글로 씁니다. 모든 글에 선생님이 문장 단위로 답을 남깁니다.</p>
+        </li>
+      </ol>
+      <div class="todo-block reveal" style="margin-top:34px;max-width:44em">
+        <span class="t">원장님 확인 필요</span>
+        <p>수업 시간(예: 90분)과 수업 중 실제 활동 순서를 확인해 위 문구를 수정해 주세요. 지금 문구는 기획서의 4단계를 기준으로 작성한 초안입니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ 프로그램 ════════ -->
+  <section class="sec" id="program">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="sec-label">프로그램</p>
+        <h2>학년에 맞춘 세 개의 반</h2>
+        <p>반 이름과 시간표는 실제 운영에 맞게 조정해 주세요. 아래는 학년 구분과 정원 형태만 반영한 초안입니다.</p>
+      </div>
+      <div class="grid3">
+        <article class="card card--tag reveal">
+          <p class="card__kicker">초등 저학년</p>
+          <h3>처음 읽는 아이 반</h3>
+          <p>짧은 동화와 그림책에서 시작해 한 권을 끝까지 읽는 힘을 기릅니다. 소리 내어 읽기와 낱말 놀이를 함께 합니다.</p>
+          <dl>
+            <dt>대상</dt><dd>초1 ~ 초3</dd>
+            <dt>수업</dt><dd><span class="ph">[요일·시간 입력]</span></dd>
+            <dt>정원</dt><dd><span class="ph">[정원 입력]</span></dd>
+          </dl>
+        </article>
+        <article class="card card--tag reveal">
+          <p class="card__kicker">초등 고학년</p>
+          <h3>생각을 말하는 아이 반</h3>
+          <p>긴 호흡의 책을 읽고 발제문을 씁니다. 자기 의견에 근거를 붙이는 연습을 집중적으로 합니다.</p>
+          <dl>
+            <dt>대상</dt><dd>초4 ~ 초6</dd>
+            <dt>수업</dt><dd><span class="ph">[요일·시간 입력]</span></dd>
+            <dt>정원</dt><dd><span class="ph">[정원 입력]</span></dd>
+          </dl>
+        </article>
+        <article class="card card--tag reveal">
+          <p class="card__kicker">중등</p>
+          <h3>글로 설득하는 아이 반</h3>
+          <p>비문학과 시사 주제를 함께 다룹니다. 논증 구조를 세우고 반박을 예상해 글을 다듬습니다.</p>
+          <dl>
+            <dt>대상</dt><dd>중1 ~ 중3</dd>
+            <dt>수업</dt><dd><span class="ph">[요일·시간 입력]</span></dd>
+            <dt>정원</dt><dd><span class="ph">[정원 입력]</span></dd>
+          </dl>
+        </article>
+      </div>
+      <div class="todo-block reveal" style="margin-top:26px">
+        <span class="t">배포 전 결정할 것</span>
+        <p>① 반별 수강료 — 홈페이지에 공개할지 여부부터 정해 주세요(공개하지 않는 경우 이 자리에 “수강료는 상담 시 안내” 문구를 넣습니다). ② 반별 요일·시간표 ③ 반별 정원.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ 아이의 변화 (후기) ════════ -->
+  <section class="sec sec--lift" id="reviews">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="sec-label">아이의 변화</p>
+        <h2>학부모님이 남긴 말</h2>
+        <p>아래는 자리만 잡아 둔 초안입니다. 실제 후기는 <strong>말씀해 주신 내용을 동의받은 뒤</strong> 넣어 주세요. 아이 이름은 넣지 않고 학년만 표기하는 것을 권합니다.</p>
+      </div>
+      <div class="grid3">
+        <blockquote class="review reveal">
+          <p class="review__q">“<span class="ph">[후기 문구 입력]</span>”</p>
+          <p class="review__who"><b>초4 학부모님</b> · <span class="ph">[작성 시기]</span></p>
+        </blockquote>
+        <blockquote class="review reveal">
+          <p class="review__q">“<span class="ph">[후기 문구 입력]</span>”</p>
+          <p class="review__who"><b>초6 학부모님</b> · <span class="ph">[작성 시기]</span></p>
+        </blockquote>
+        <blockquote class="review reveal">
+          <p class="review__q">“<span class="ph">[후기 문구 입력]</span>”</p>
+          <p class="review__who"><b>중2 학부모님</b> · <span class="ph">[작성 시기]</span></p>
+        </blockquote>
+      </div>
+      <div class="todo-block reveal" style="margin-top:26px">
+        <span class="t">주의 — 후기와 사진은 동의가 먼저입니다</span>
+        <p>학부모 후기·아이 사진·아이 글은 반드시 서면(또는 카카오톡 등 기록이 남는 방식) 동의를 받은 뒤 게시하세요. 동의받지 않은 후기나 아이 작품은 이 페이지에 넣지 마세요.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ 공간 ════════ -->
+  <section class="sec" id="space">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="sec-label">공간</p>
+        <h2>아이가 앉는 자리</h2>
+        <p>사진은 실제 교실 모습이 가장 좋습니다. 화려한 홍보 사진보다, 책상과 서가가 그대로 보이는 사진이 학부모님께 더 신뢰를 줍니다.</p>
+      </div>
+      <div class="spacegrid">
+        <div class="slot slot--wide reveal">
+          <svg class="slot__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="M3.5 17l5-4.5 4 3.5 3-2.5 5 4"/></svg>
+          <span class="slot__t">대표 사진</span>
+          <span class="slot__d">1600×800px (가로 2:1)</span>
+        </div>
+        <div class="slot reveal"><span class="slot__t">수업 장면</span><span class="slot__d">800×800px</span></div>
+        <div class="slot reveal"><span class="slot__t">서가</span><span class="slot__d">800×800px</span></div>
+        <div class="slot reveal"><span class="slot__t">책상</span><span class="slot__d">800×800px</span></div>
+        <div class="slot reveal"><span class="slot__t">아이들 글</span><span class="slot__d">800×800px · 동의 필요</span></div>
+        <div class="slot reveal"><span class="slot__t">입구</span><span class="slot__d">800×800px</span></div>
+        <div class="slot reveal"><span class="slot__t">기타</span><span class="slot__d">800×800px</span></div>
+      </div>
+      <p style="font-size:13.5px;color:var(--muted);margin-top:18px">사진을 준비하시면 위 점선 자리를 실제 사진으로 바꿔 드립니다. 파일 이름과 순서만 알려 주세요.</p>
+    </div>
+  </section>
+
+  <!-- ════════ 자주 묻는 질문 ════════ -->
+  <section class="sec sec--lift" id="faq">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="sec-label">자주 묻는 질문</p>
+        <h2>상담 전에 많이 물으시는 것</h2>
+        <p>답변 문구는 초안입니다. 실제 운영 방식과 다르면 그대로 고쳐 주세요.</p>
+      </div>
+      <div class="faq">
+        <details class="reveal">
+          <summary>체험 수업이 있나요?</summary>
+          <div class="faq__a"><p><span class="ph">[답변 입력]</span> 예: 상담 후 일정을 정해 한 번 참여해 보실 수 있습니다. 체험 후 결정하셔도 됩니다.</p></div>
+        </details>
+        <details class="reveal">
+          <summary>어느 학년부터 다닐 수 있나요?</summary>
+          <div class="faq__a"><p>초등 1학년부터 중등까지 반을 나눠 운영합니다. 학년보다 아이의 읽기 수준을 먼저 확인한 뒤 반을 정합니다.</p></div>
+        </details>
+        <details class="reveal">
+          <summary>책은 학원에서 주나요, 따로 사야 하나요?</summary>
+          <div class="faq__a"><p><span class="ph">[답변 입력]</span> 예: 매달 읽을 책 목록을 안내해 드리고, 구입은 개별적으로 하십니다. 도서관 대출도 가능합니다.</p></div>
+        </details>
+        <details class="reveal">
+          <summary>결석하면 보강이 되나요?</summary>
+          <div class="faq__a"><p><span class="ph">[답변 입력]</span> 예: 수업 하루 전까지 알려 주시면 다른 반에서 보강을 받을 수 있습니다.</p></div>
+        </details>
+        <details class="reveal">
+          <summary>수강료는 얼마인가요?</summary>
+          <div class="faq__a"><p><span class="ph">[답변 입력]</span> 반과 횟수에 따라 다릅니다. 상담 시 정확히 안내해 드립니다.</p></div>
+        </details>
+        <details class="reveal">
+          <summary>형제가 함께 다니면 할인이 있나요?</summary>
+          <div class="faq__a"><p><span class="ph">[답변 입력]</span></p></div>
+        </details>
+        <details class="reveal">
+          <summary>아이가 글쓰기를 싫어하는데 괜찮을까요?</summary>
+          <div class="faq__a"><p>괜찮습니다. 처음부터 긴 글을 요구하지 않습니다. 두세 문장에서 시작해 한 단락, 한 편으로 늘려 갑니다. 잘 쓴 문장 하나를 찾아 칭찬하는 것부터 시작합니다.</p></div>
+        </details>
+        <details class="reveal">
+          <summary>학부모 상담은 언제 하나요?</summary>
+          <div class="faq__a"><p><span class="ph">[답변 입력]</span> 예: 학기 중 한 번 정식 상담을 진행하고, 그 외에는 언제든 연락 주시면 됩니다.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ 오시는 길 ════════ -->
+  <section class="sec" id="location">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="sec-label">오시는 길</p>
+        <h2>김해 삼계동</h2>
+      </div>
+      <div class="loc">
+        <div class="slot loc__map reveal">
+          <svg class="slot__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          <span class="slot__t">지도 넣을 자리</span>
+          <span class="slot__d">네이버 지도 또는 카카오맵에서 “공유 → 지도 퍼가기”로 받은 코드를<br />이 자리에 붙여 넣으면 됩니다.</span>
+        </div>
+        <div class="reveal">
+          <ul class="loc__list">
+            <li><b>주소</b><span>김해시 삼계동 <span class="ph">[상세주소·건물명 입력]</span></span></li>
+            <li><b>전화</b><span><span class="ph">[전화번호 입력]</span></span></li>
+            <li><b>카카오톡</b><span><a href="#consult">채널 주소 <span class="ph">[채널 URL 입력]</span></a></span></li>
+            <li><b>주차</b><span><span class="ph">[주차 안내 입력]</span></span></li>
+            <li><b>수업 시간</b><span><span class="ph">[운영 시간 입력]</span></span></li>
+          </ul>
+          <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:22px">
+            <a class="btn btn--solid" href="#consult">상담 신청하기</a>
+            <a class="btn btn--ghost" href="#consult">길찾기 <span class="ph">[지도 링크]</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ 상담 신청 ════════ -->
+  <section class="sec sec--night" id="consult">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="sec-label">상담 신청</p>
+        <h2 style="color:#fff">아이에 대해 알려 주세요</h2>
+        <p>남겨 주신 연락처로 하루 안에 연락드립니다. 상담은 부담 없이, 아이가 어떤 책을 어떻게 읽고 있는지 확인하는 자리입니다.</p>
+      </div>
+      <div class="form reveal">
+        <div class="alert alert--warn" id="formNotWired" role="status">
+          <strong>온라인 접수가 아직 연결되지 않았습니다.</strong> 이 화면은 배포 전 상태입니다.
+          전화 또는 카카오톡으로 문의해 주시면 바로 안내드립니다.
+        </div>
+        <div class="alert alert--err" id="formErr" role="alert" tabindex="-1"></div>
+        <div class="alert alert--ok" id="formOk" role="status" tabindex="-1"></div>
+
+        <!-- ▼ 배포 전: 아래 action 값을 실제 접수 주소로 바꾸세요.
+             ① 무료 폼 서비스(예: Formspree) — 발급받은 주소를 action에 넣습니다.
+             ② 직접 서버(Supabase·Next.js API) — /api/consult 같은 주소를 넣습니다.
+             action이 "#"이면 위 경고문이 보이고 전송되지 않습니다. -->
+        <form id="consultForm" action="#" method="post" novalidate>
+          <div class="form__row">
+            <div class="field">
+              <label for="f-name">학부모님 성함 <span class="req">*</span></label>
+              <input id="f-name" name="guardian_name" type="text" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="f-phone">연락처 <span class="req">*</span></label>
+              <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="010-0000-0000" required />
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="field">
+              <label for="f-grade">자녀 학년</label>
+              <select id="f-grade" name="grade">
+                <option value="">선택해 주세요</option>
+                <option>초등 1학년</option><option>초등 2학년</option><option>초등 3학년</option>
+                <option>초등 4학년</option><option>초등 5학년</option><option>초등 6학년</option>
+                <option>중등</option><option>기타</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-way">알게 된 경로</label>
+              <select id="f-way" name="source">
+                <option value="">선택해 주세요</option>
+                <option>네이버 검색</option><option>네이버 플레이스</option><option>당근마켓</option>
+                <option>인스타그램</option><option>지인 소개</option><option>지나가다 보고</option><option>기타</option>
+              </select>
+              <span class="hint">어디서 보고 오셨는지 알면 안내에 도움이 됩니다.</span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-msg">궁금한 점</label>
+            <textarea id="f-msg" name="message" placeholder="예: 초3인데 책은 좋아하는데 글쓰기를 어려워합니다. 수업 시간과 수강료를 알고 싶어요."></textarea>
+          </div>
+          <label class="consent" for="f-consent">
+            <input id="f-consent" name="consent" type="checkbox" required />
+            <span>상담을 위한 개인정보(성함·연락처·자녀 학년) 수집 및 이용에 동의합니다. 수집한 정보는 상담 목적으로만 사용하며, 상담 종료 후 <span class="ph">[보유 기간 입력]</span> 이내에 파기합니다. <span class="req">*</span></span>
+          </label>
+          <button class="btn btn--solid btn--block" type="submit">상담 신청 보내기</button>
+          <p style="font-size:12.5px;color:var(--muted);margin:14px 0 0">* 표시는 필수 항목입니다. 전화 상담을 원하시면 <span class="ph">[전화번호]</span>로 연락 주세요.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div>
+        <p class="foot__brand">마음글독서논술</p>
+        <p style="margin:0 0 14px">김해 삼계동에서 초등·중등 독서·논술 수업을 합니다. 한 아이의 글을 끝까지 읽습니다.</p>
+        <p style="margin:0"><span class="ph">[전화번호]</span></p>
+      </div>
+      <div>
+        <h4>바로 가기</h4>
+        <ul>
+          <li><a href="#about">학원 소개</a></li>
+          <li><a href="#method">수업 방식</a></li>
+          <li><a href="#program">프로그램</a></li>
+          <li><a href="#faq">자주 묻는 질문</a></li>
+          <li><a href="#consult">상담 신청</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>채널</h4>
+        <ul>
+          <!-- ▼ 배포 전: 실제 채널 주소로 교체 -->
+          <li><a href="#">카카오톡 채널 <span class="ph">[URL]</span></a></li>
+          <li><a href="#">인스타그램 <span class="ph">[URL]</span></a></li>
+          <li><a href="#">네이버 플레이스 <span class="ph">[URL]</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__biz">
+      <p style="margin:0 0 4px">주소 김해시 삼계동 <span class="ph">[상세주소]</span> · 대표 <span class="ph">[성명]</span> · 사업자등록번호 <span class="ph">[번호 또는 ‘해당 없음’]</span></p>
+      <p style="margin:0">© 2026 마음글독서논술. 이 페이지의 사진과 글은 학부모 동의 후 게시합니다.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="mobilebar on-night" aria-label="빠른 상담">
+  <div class="mobilebar__in">
+    <a class="btn btn--solid" href="#consult" style="flex:1.3">상담 신청하기</a>
+    <a class="btn btn--ghost" href="#consult" style="flex:1">전화 문의</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* 스크롤 등장 */
+  var items = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window) || reduce) {
+    items.forEach(function(el){ el.classList.add('is-in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+      });
+    }, { rootMargin:'0px 0px -12% 0px', threshold:0.12 });
+    items.forEach(function(el){ io.observe(el); });
+    var mc = document.getElementById('markcard');
+    if (mc) { io.observe(mc); }
+  }
+
+  /* 색인표 현재 위치 표시 */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.indexbar a'));
+  var targets = links.map(function(a){ return document.querySelector(a.getAttribute('href')); });
+  if ('IntersectionObserver' in window && targets.length) {
+    var spy = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (!e.isIntersecting) return;
+        links.forEach(function(a, i){
+          if (targets[i] === e.target) { a.setAttribute('aria-current','true'); }
+          else { a.removeAttribute('aria-current'); }
+        });
+      });
+    }, { rootMargin:'-40% 0px -55% 0px' });
+    targets.forEach(function(t){ if (t) spy.observe(t); });
+  }
+
+  /* 상담 폼 */
+  var form = document.getElementById('consultForm');
+  if (!form) return;
+  var warn = document.getElementById('formNotWired');
+  var err  = document.getElementById('formErr');
+  var ok   = document.getElementById('formOk');
+
+  if (form.getAttribute('action') === '#') {
+    warn.style.display = 'block';
+  } else {
+    warn.style.display = 'none';
+  }
+
+  form.addEventListener('submit', function(ev){
+    var problems = [];
+    if (!document.getElementById('f-name').value.trim()) problems.push('학부모님 성함을 입력해 주세요.');
+    var phone = document.getElementById('f-phone').value.replace(/[^0-9]/g,'');
+    if (phone.length < 9 || phone.length > 11) problems.push('연락처를 정확히 입력해 주세요. (예: 010-0000-0000)');
+    if (!document.getElementById('f-consent').checked) problems.push('개인정보 수집 및 이용에 동의해 주세요.');
+
+    if (problems.length) {
+      ev.preventDefault();
+      err.innerHTML = '확인이 필요합니다.<ul><li>' + problems.join('</li><li>') + '</li></ul>';
+      err.style.display = 'block';
+      err.focus();
+      return;
+    }
+    err.style.display = 'none';
+
+    if (form.getAttribute('action') === '#') {
+      ev.preventDefault();
+      ok.innerHTML = '접수 화면이 아직 연결되지 않았습니다. 번거롭지만 전화 또는 카카오톡으로 연락 주시면 바로 안내드립니다.';
+      ok.style.display = 'block';
+      ok.focus();
+    }
+  });
+
+  /* 광고성 유입 표시(선택): utm_source를 폼에 함께 저장 */
+  try {
+    var p = new URLSearchParams(window.location.search);
+    var s = p.get('utm_source') || '';
+    var t = p.get('utm_medium') || '';
+    var c = p.get('utm_campaign') || '';
+    if (s || t || c) {
+      var joined = [s, t, c].filter(Boolean).join(' / ');
+      var srcSel = document.getElementById('f-way');
+      var hid = document.createElement('input');
+      hid.type = 'hidden'; hid.name = 'utm'; hid.value = joined;
+      form.appendChild(hid);
+      if (srcSel && s && !srcSel.value) {
+        for (var i = 0; i < srcSel.options.length; i++) {
+          if (srcSel.options[i].text.indexOf(s) > -1) { srcSel.selectedIndex = i; break; }
+        }
+      }
+    }
+  } catch (e) {}
+})();
+</script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
